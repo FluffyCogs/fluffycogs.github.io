@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- boring meta tags -->
+    <meta name="author" content="FluffyCogs">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noarchive">
+    <meta name="robots" content="noindex">
+    <meta name="robots" content="noimageindex">
+    <meta name="robots" content="nosnippet">
+    <meta property="og:title" content="FluffyCogs's Fabulous Web Page">
+    <meta property="og:description" content="bleegghh :P">
+    <meta property="og:image" content="https://cdn-prd.content.metamorphosis.com/wp-content/uploads/sites/6/2022/12/shutterstock_781327003-1.jpg">
+    <meta property="og:url" content="none XD"> <!-- TODO: buy url -->
+
+    <title>my web page :3c</title>
+
+    <!-- boring link tags -->
+    <link rel="icon" href="assets/icon.webp" type="image/webp">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+  </head>
+  <body>
+    <!-- What are you doing here? -->
+    <header>
+      <nav class="navbar">
+        <ul class="navbar_list">
+          <a href="index.html" class="navbar_item"><li >Home</li></a>
+          <a href="links.html" class="navbar_item"><li >Links</li></a>
+          <a href="" class="navbar_item"><li >My Projects</li></a>
+          <a href="" class="navbar_item"><li >Guestbook</li></a>
+          <a href="" class="navbar_item options"><li>Options</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main class="index_main">
+      <div class="content_block main_content_block">
+        <h1>My Super Awesome Page Of Greatness And Wonderfulness</h1>
+        <p>Hi, welcome to my page!</p>
+        <p>
+          This is still a work in progress, it will be updated as I go.
+        </p>
+        <img src="assets\images\wip.gif" alt="work in progress" class="formatted_image">
+        <p>Have some blinkies and stickers and stuff for now.</p>
+        <div class="content_block blinkies_div">
+          <h2>BLINKIES YAYAYAY</h2>
+          <a href="http://blinki.es/animal" target="_blank" rel="noopener noreferrer nofollow external"><img src="http://blinki.es/blinkies/animal/i-love-ferrets.gif" alt="Animal blinkies"></a>
+          <a href="http://blinki.es/animal" target="_blank" rel="noopener noreferrer nofollow external"><img src="http://blinki.es/blinkies/animal/ferret-fanatic.gif" alt="Animal blinkies"></a>
+          <a href="http://blinki.es/love" target="_blank" rel="noopener noreferrer nofollow external"><img src="http://blinki.es/blinkies/love/love-not-war.gif" alt="Love blinkies"></a>
+          <a href="http://blinki.es/music" target="_blank" rel="noopener noreferrer nofollow external"><img src="http://blinki.es/blinkies/music/i-love-music.gif" alt="Music blinkies"></a>
+          <a href="http://blinki.es/music" target="_blank" rel="noopener noreferrer nofollow external"><img src="http://blinki.es/blinkies/music/i-love-rock-and-roll.gif" alt="Music blinkies"></a>
+          <a href="http://blinki.es/people" target="_blank" rel="noopener noreferrer nofollow external"><img src="http://blinki.es/blinkies/people/stargazer.gif" alt="People blinkies"></a>
+          <a href="http://blinki.es/other" target="_blank" rel="noopener noreferrer nofollow external"><img src="http://blinki.es/blinkies/other/blinkyholic.gif" alt="Other blinkies"></a>
+          <img src="assets\images\blinkies\blinkiesCafe-SY.gif" alt="im bi">
+          <img src="assets\images\blinkies\blinkiesCafe-K9.gif" alt="im bi">
+          <img src="assets\images\blinkies\blinkiesCafe-kl.gif" alt="im bi">
+        </div>
+        <div class="content_block stickers_div">
+          <h2>STICKERS YAYAYAY</h2>
+          <img src="assets\images\stickers\html_incomp.gif" alt="html incompetence ahead">
+          <img src="assets\images\stickers\20cash.gif" alt="this site was made with 20 dollars">
+          <img src="assets\images\stickers\quantum_note_web.png" alt="quantum page">
+          <img src="assets\images\stickers\student_coder.png" alt="student coder">
+          <img src="assets\images\stickers\adult-ish.png" alt="adult-ish">
+          <img src="assets\images\stickers\redefine_success.png" alt="if at first you don't succeed, redefine success">
+          <img src="assets\images\stickers\best_thing_abt_ppl_dogs.png" alt="the best thing about people is their dogs">
+        </div>
+        <div class="content_block buttons_div">
+          <h2>BUTTONS YAYAYAY</h2>
+          <a href='https://blinkies.cafe' target='_blank'><img src='https://blinkies.cafe/b/display/blinkiesCafe-badge.gif' alt='blinkies.cafe | make your own blinkies!'></a>
+        </div>
+      </div>
+      <div class="right_blocks">
+        <div class="content_block ferret_image_block">
+          <h2>Ferret of the week:</h2>
+          <img id="ferret_image" class="formatted_image">
+          <p>“ <span id="quote">What a creature.</span> ”</p>
+        </div>
+        <!-- Ferret of the week block script -->
+        <script>
+          var image_paths = [];
+          for (i = 1; i <= 52; i++) {
+            image_paths.push("assets/images/ferrets/ferret_" + String(i) + ".png");
+          }
+          const dayOfYear = (date) => 
+            Math.floor((date - new Date(date.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24 / 7);
+          document.getElementById("ferret_image").src = image_paths[dayOfYear(new Date()) - 1];
+          document.getElementById("ferret_image").alt = "Today's Ferret! (" + String(dayOfYear(new Date()) + ")");
+          var quotes = ["What a creature.", "Gorgeous specimen.", "Look at them!", "Marvelous mustelid.", "Incredible.",
+            "Love them.", "Wow!", "Amazing animals.", "Aren't they great?", "Fabulous ferret."]
+          document.getElementById("quote").textContent = quotes[Math.floor(Math.random()*10)]
+        </script>
+        <div class="content_block hiiii">
+          <img src="assets/images/colonthree.gif" alt=":3">
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+h1 {
+  margin: 15px;
+}
+.links-list {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 10px;
+}
+.my-link {
+  font-size: 20px;
+  margin: 10px;
+  color: #4cfff6;
+  text-align: center;
+}
+.my-link:hover{
+    text-decoration: underline;
+}
+.logo {
+    height: 125px;
+    width: 125px;
+    border-radius: 30px;
+}
+.link-button {
+  width: 200px;
+  height: 116.66px;
+}
+.green-border {
+  border-color: rgb(0, 53, 0);
+}

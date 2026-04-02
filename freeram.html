@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- boring meta tags -->
+    <meta name="author" content="FluffyCogs">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noarchive">
+    <meta name="robots" content="noindex">
+    <meta name="robots" content="noimageindex">
+    <meta name="robots" content="nosnippet">
+    <meta property="og:title" content="FRee RaM!!!">
+    <meta property="og:description" content="10223 tIb!11">
+    <meta property="og:image" content="https://cdn-prd.content.metamorphosis.com/wp-content/uploads/sites/6/2022/12/shutterstock_781327003-1.jpg">
+
+    <title>FREE RAM</title>
+
+    <!-- boring link tags -->
+    <link rel="icon" href="assets/images/assorted_animals/ram.png" type="image/png">
+    <link rel="stylesheet" href="css/freeramstyle.css">
+    <link rel="stylesheet" href="css/fonts.css">
+  </head>
+  <body>
+    <!-- What are you doing here? -->
+    <header>
+      <div class="navbar">
+        <a href="index.html"><- go back to main page</a>
+      </div>
+    </header>
+    <p>fluffycogs@www:~/FreeRam$ echo "Download Free Ram!!!!"</p>
+    <p>Download Free Ram!!!!</p>
+    <p>fluffycogs@www:~/FreeRam$ <span class="blink">|</span></p>
+    <div class="content_block">
+      <h1><span class="gay">DOW<span class="blink">N</span>LOAD FREE RA<span class="blink">M</span> NOW !<span class="blink">!</span>111!!!1<span class="blink">1</span>1!!<span class="blink">!</span>!!!1<span class="blink">!</span></span></h1>
+      <a href="assets/images/assorted_animals/ram.png" download="YourFreeRam.png"><img src="assets/images/free_ram_button.png" alt="DOWNLOAD FREE RAM HERE"></a>
+    </div>
+    <!-- i took the matrix rain thing below from here xd: https://dev.to/javascriptacademy/matrix-raining-code-effect-using-javascript-4hep -->
+    <canvas id="matrix"></canvas>
+    <script>
+      const canvas = document.getElementById('matrix');
+      const context = canvas.getContext('2d');
+      
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
+      const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      const nums = '0123456789';
+
+      const alphabet = katakana + latin + nums;
+
+      const fontSize = 16;
+      const columns = canvas.width/fontSize;
+      const rainDrops = [];
+      
+      for( let x = 0; x < columns; x++ ) {
+        rainDrops[x] = 1;
+      }
+
+      const draw = () => {
+        context.fillStyle = 'rgba(0, 0, 0, 0.05)';
+        context.fillRect(0, 0, canvas.width, canvas.height);
+
+        context.fillStyle = '#00FF0055';
+        context.font = fontSize + 'px monospace';
+        
+        for(let i = 0; i < rainDrops.length; i++) {
+          const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+          context.fillText(text, i*fontSize, rainDrops[i]*fontSize);
+
+          if(rainDrops[i]*fontSize > canvas.height && Math.random() > 0.975){
+              rainDrops[i] = 0;
+          }
+          rainDrops[i]++;
+        }
+      };
+      setInterval(draw, 30);
+    </script>
+  </body>
+</html>

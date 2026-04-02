@@ -1,0 +1,92 @@
+body {
+  background-color: black;
+  color: rgb(0, 201, 0);
+  font-family: "Jetbrains Mono", monospace;
+  font-size: 25px;
+  overflow: hidden;
+}
+p {
+  margin: 2vh 1vw;
+  border-bottom: 1px solid #2e2e2e;
+}
+h1 {
+  color: #00d812;
+}
+.navbar a {
+  color: #00d812;
+  margin-left: 25px;
+  padding: 5px;
+  background-color: #005f156c;
+  border-radius: 10px;
+}
+.navbar a:hover {
+  color: rgb(0, 54, 0);
+  background-color: #00ff379d;
+}
+header {
+  background-image: linear-gradient(to top, #2e2e2e, #444444);
+}
+.navbar {
+  height: 10vh;
+  align-content: center;
+}
+.blink {
+  animation: blinker 1s step-start infinite;
+}
+.content_block {
+  position: fixed;
+  top: 12%;
+  width: 96.8%;
+  box-sizing: border-box;
+  padding: 0 15px 1px 15px;
+  margin: 2vh 1vw;
+  background-color: #031f005b;
+  border-top: 5px solid #00c42a;
+  border-radius: 0 0 15px 15px;
+  text-align: center;
+}
+img {
+  border-radius: 40px;
+  margin: 0.5em
+}
+#matrix {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.gay {
+  animation: gay-anim 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+  opacity: 0;
+  }
+}
+@keyframes gay-anim {
+  12.5%{
+    color: #000;
+  }
+  25%{
+    color: #F00;
+  }
+  37.5%{
+    color: #0F0;
+  }
+  50%{
+    color: #FF0;
+  }
+  62.5%{
+    color: #00F;
+  }
+  75%{
+    color: #F0F;
+  }
+  87.5%{
+    color: #0FF;
+  }
+  100%{
+    color: #FFF;
+  }
+}
