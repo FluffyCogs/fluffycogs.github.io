@@ -98,6 +98,10 @@ header{
 .buttons_div{
   text-align: center;
 }
+.me{
+  width: 250px;
+  height: 312.5px;
+}
 
 .right_blocks{
   position: sticky;
