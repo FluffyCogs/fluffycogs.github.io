@@ -126,3 +126,11 @@ header{
   font-style: italic;
   text-decoration: underline;
 }
+
+/* SCOUNDREL */
+.scoundrel_div{
+  text-align: center;
+}
+.scoundrel_game_iframe{
+  margin: 20px;
+}
