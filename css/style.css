@@ -5,14 +5,24 @@ body{
   background-image: url(../assets/images/background.png);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   font-size: 20px;
   color: #dae8ff;
   font-family: "Sono", monospace;
   overflow-x: hidden;
 }
-a{
-  text-decoration: none;
-  color: inherit;
+p a{
+  color: #004753;
+  background-color: #41bfc4;
+  border-radius: 5px;
+  text-decoration-color: #004753;
+}
+a p{
+  color: #004753;
+  background-color: #41bfc4;
+  border-radius: 5px;
+  text-decoration: underline;
+  text-decoration-color: #004753;
 }
 h1{
   font-size: 35px;
@@ -72,6 +82,8 @@ header{
   border-radius: 10px 0 10px 0;
   text-align: center;
   font-weight: 700;
+  text-decoration: none;
+  color: inherit;
 }
 .navbar_item:hover{
   background-image: linear-gradient(to top, #006669, #00758a);
@@ -101,6 +113,9 @@ header{
 .me{
   width: 250px;
   height: 312.5px;
+}
+.whats_new{
+  text-align: center;
 }
 
 .right_blocks{
@@ -132,5 +147,6 @@ header{
   text-align: center;
 }
 .scoundrel_game_iframe{
-  margin: 20px;
+  max-width: 95%;
+  margin: 10px 0 -10px 0;
 }
